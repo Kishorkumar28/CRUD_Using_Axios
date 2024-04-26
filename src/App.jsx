@@ -114,7 +114,7 @@ function App() {
     <>
       <div className='parent'>
         <div className='left'>
-          <h1>Details</h1>
+          <h1>User Data Management System</h1>
           <ul style={{ listStyleType: 'none' }}>
             {datas.map(data => (
               <li className='list' key={data.id}>
