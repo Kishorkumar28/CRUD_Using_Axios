@@ -1,0 +1,120 @@
+/* Fonts */
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #bfe8eb;
+}
+
+.poppins-thin {
+  font-weight: 100;
+}
+
+/* Page Layout */
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px; /* Add margin to the parent container */
+}
+.left{
+  margin-left: 70px;
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.form-container:hover{
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between form elements */
+}
+
+.form_elmnts {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add gap between form elements */
+}
+
+label {
+  min-width: 80px; /* Set minimum width for labels */
+  font-weight: bold; /* Make labels bold for emphasis */
+}
+
+input[type="text"] {
+  width: 100%; /* Make text inputs fill the available width */
+  padding: 8px; /* Add padding inside text inputs */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border: 1px solid #ccc; /* Add border for text inputs */
+}
+
+button[type="submit"] {
+  width: 100%; /* Make submit button fill the available width */
+  padding: 10px; /* Add padding inside the button */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darken button background color on hover */
+}
+.list {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  margin-bottom: 30px;;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.list:hover {
+  transform: scale(1.05); /* Zoom in effect on hover */
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#update{
+  height: 40px;
+  width: 100px; /* Make submit button fill the available width */
+  padding: 10px; /* Add padding inside the button */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#delete{
+  height: 40px;
+  width: 100px; /* Make submit button fill the available width */
+  padding: 10px; /* Add padding inside the button */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  cursor: pointer;
+}
